@@ -1,5 +1,4 @@
 let boxes = document.querySelectorAll('.box');
-console.log(boxes);
 let currentPlayer = 'x';
 const array = ["", "", "", "", "", "", "", "", ""];
 const win=[
