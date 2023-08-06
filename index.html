@@ -7,20 +7,30 @@
     <title>tic-tac-toe</title>
 </head>
 <body>
+  <div id="main-container">
     <h1>Tic Tac Toe</h1>
-<div class="box-container">
-  <div class="box" data-index="0"></div>
-  <div class="box" data-index="1"></div>
-  <div class="box" data-index="2"></div>  
-  <div class="box" data-index="3"></div>
-  <div class="box" data-index="4"></div>
-  <div class="box" data-index="5"></div>  
-  <div class="box" data-index="6"></div>
-  <div class="box" data-index="7"></div>
-  <div class="box" data-index="8"></div>  
-</div>
+    <h2>current player: <span id="currentPlayer">X</span></h2>
+    <div class="box-container">
+      <div class="box" data-index="0"></div>
+      <div class="box" data-index="1"></div>
+      <div class="box" data-index="2"></div>  
+      <div class="box" data-index="3"></div>
+      <div class="box" data-index="4"></div>
+      <div class="box" data-index="5"></div>  
+      <div class="box" data-index="6"></div>
+      <div class="box" data-index="7"></div>
+      <div class="box" data-index="8"></div>  
+    </div>
+  </div>
+
+<div id="player-names">
+  <div class="fst-player"> <span>Player X : </span><input  id="fstPlayer" title="player1"></div>
+  <div class="sec-player"> <span>Player O : </span> <input  id="secPlayer" title="player2"></div>
+  <button id="start-btn">start</button>
+</div> 
+
+
+
 <script src="game.js"></script>
 </body>
 </html>
-
-

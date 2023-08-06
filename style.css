@@ -1,19 +1,69 @@
-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body > #player-names{
+  padding-top:30vh;
+  margin: auto;
+  font-size: 1.2rem;
+}
+#player-names input{
+  min-height: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+#main-container{
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .box-container {
   display: grid;
-  grid-template-columns: 10rem 10rem 10rem;
+  grid-template-columns: 8rem 8rem 8rem;
 }
 .box {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 2em 1.5em;
+  padding: 1.8em 1.3em;
   font-size: 2em;
   text-align: center;
   cursor: pointer;
+} 
+
+
+#player-names {
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-btn {
+  width: 80%;
+  min-height:40px;
+  align-items: center;
+  margin: auto;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border:none;
+  text-transform: uppercase;
+  background-color: black;
+  color:aqua
+}
+#start-btn:hover {
+  background-color: rgb(2, 114, 114);
+  color: white;
+}
+
+
+
+@media (max-width: 768px) {
+  /* Adjust the grid-template-columns to fit one box per row */
+  .box-container {
+    grid-template-columns: 3rem 3rem 3rem;
+  }
+
+  /* Make the boxes take full width */
+  .box {
+  padding: 1.2em 1em;
+  font-size: 1.5em;
+  }
 }
